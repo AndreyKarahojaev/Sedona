@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <link rel="stylesheet" href="css/style.min.css"/>
+    <link rel="stylesheet" href="css/normalize.css"/>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Sedona</title>
+  </head>
+  <body class="page-body page">
+    <div class="main_container">
+      <header class="page-header">
+        <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"> </script>
+        <div class="main-wrapper">
+          <nav class="main-nav main-nav--closed">
+            <button class="main-nav__toggle main-nav__toggle--decoration main-nav--nojs" type="submit"><span class="visually-hidden">Открыть меню</span></button>
+            <ul class="main-nav__link site-list">
+              <li class="site-list__item"><a class="site-list__link" href="./index.html">Главная</a></li>
+              <li class="site-list__item"><a class="site-list__link" href="./photo.html">Фото и видео</a></li>
+              <li class="site-list__item"><a class="site-list__link" href="./form.html">Оставить отзыв</a></li>
+              <li class="site-list__item"><a class="site-list__link" href="https://htmlacademy.ru">HTML ACADEMY</a></li>
+            </ul>
+            <div class="logo"><a class="page-header__logo" href="./index.html"><img class="header-logo" src="img/logo-sedona-mobile.svg" alt="logo"/><img class="header-logo--tablet" src="img/logo-sedona-tablet.svg" alt="logo"/><img class="header-logo--desktop" src="img/logo-sedona-desktop.svg" alt="logo"/></a></div>
+          </nav>
+        </div>
+      </header>
+      <main class="photo_page" id="photo_page">
+        <div class="main_photo__wrapper">
+          <section class="preview" id="preview">
+            <div class="preview-picture">
+              <picture class="preview-back">
+                <source media="(max-width: 700px)" srcset="img/bg-back-mobile@2x.jpg 1.5x" sizes="100vw"/>
+                <source media="(max-width: 1439px)" srcset="img/bg-back-tablet@1x.jpg, img/bg-back-tablet@2x.jpg 1.5x" sizes="100vw"/>
+                <source media="(min-width: 1440px)" srcset="img/bg-back-desktop@1x.jpg, img/bg-back-desktop@2x.jpg 1.5x" sizes="100vw"/><img class="preview-img" src="img/bg-back-mobile@1x.jpg" alt="задний фон" height="270" width="380"/>
+              </picture>
+              <div class="preview-svg">
+                <object class="preview-svg--small" data="img/text_sedona.svg" type="image/svg+xml"></object>
+                <object class="preview-svg--big" data="img/text_sedona--big.svg" type="image/svg+xml"></object>
+              </div>
+              <picture class="preview-back">
+                <source media="(min-width: 701px)" srcset="img/bg-intro-triangle-desktop.svg" sizes="100vw"/><img class="preview-svg--triangle" src="img/bg-intro-triangle-mobile.svg" alt="задний фон"/>
+              </picture>
+            </div>
+            <div class="in_preview" id="in_preview">
+              <h2 class="preview-content__title">СЕДОНА — небольшой  городок в АРИЗОНЕ, заслуживающий большего!</h2>
+              <p class="preview-content__text">рассмотрим 5 причин, по которым Седона круче, чем гранд каньон</p>
+            </div>
+            <div class="ph_galery visually-hidden" id="ph_galery">
+              <h2 class="preview-content__title">Фото и видео </h2>
+              <p class="preview-content__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+            </div>
+            <div class="fr_feedback visually-hidden" id="fr_feedback">
+              <h2 class="preview-content__title">Оставьте свой отзыв </h2>
+              <p class="preview-content__text">Помогите нашим отелям стать лучше! оставьте отзыв о них,а также о посещенных вами достопримечательностях.</p>
+            </div>
+          </section>
+          <section class="ph_galery">
+            <div class="ph_galery__wrapper"> 
+              <div class="photo-galery__list picture-galery__photo picture-galery__photo--big"> <img class="photo-galery__item photo-galery--mobile" src="img/photo-sunset-mobile@1x.jpg" alt="неродные просторы" srcset="img/photo-sunset-mobile@2x.jpg 2x"/><img class="photo-galery__item photo-galery--tablet" src="img/photo-sunset-tablet@1x.jpg" alt="неродные просторы" srcset="img/photo-sunset-tablet@2x.jpg 2x"/><img class="photo-galery__item photo-galery--desktop" src="img/photo-sunset-desktop@1x.jpg" alt="неродные просторы" srcset="img/photo-sunset-desktop@2x.jpg 2x"/>
+                <div class="photo-galery__caption--wrapper">
+                  <article class="photo-galery__caption">
+                    <h3 class="user-photo__title">неродные просторы</h3>
+                    <p class="user-photo__content">Автор фото: <span class="user-photo__name">Борис</span></p><span class="user-like"><span class="counter-like">20 </span></span>
+                  </article>
+                </div>
+              </div>
+              <div class="photo-galery__list picture-galery__photo"><img class="photo-galery__item photo-galery--mobile" src="img/photo-cactus-mobile@1x.jpg" alt="Местная растительность" srcset="img/photo-cactus-mobile@2x.jpg 2x"/><img class="photo-galery__item photo-galery--tablet" src="img/photo-cactus-tablet@1x.jpg" alt="Местная растительность" srcset="img/photo-cactus-tablet@2x.jpg 2x"/><img class="photo-galery__item photo-galery--desktop" src="img/photo-cactus-desktop@1x.jpg" alt="Местная растительность" srcset="img/photo-cactus-desktop@2x.jpg 2x"/>
+                <div class="photo-galery__caption--wrapper">
+                  <article class="photo-galery__caption">
+                    <h3 class="user-photo__title">Местная растительность</h3>
+                    <p class="user-photo__content">Автор фото: <span class="user-photo__name">Сергей</span></p><span class="user-like"><span class="counter-like">18</span></span>
+                  </article>
+                </div>
+              </div>
+              <div class="photo-galery__list picture-galery__photo"><img class="photo-galery__item photo-galery--mobile" src="img/photo-roads-mobile@1x.jpg" alt="Дорога на север" srcset="img/photo-roads-mobile@2x.jpg 2x"/><img class="photo-galery__item photo-galery--tablet" src="img/photo-roads-tablet@1x.jpg" alt="Дорога на север" srcset="img/photo-roads-tablet@2x.jpg 2x"/><img class="photo-galery__item photo-galery--desktop" src="img/photo-roads-desktop@1x.jpg" alt="Дорога на север" srcset="img/photo-roads-desktop@2x.jpg 2x"/>
+                <div class="photo-galery__caption--wrapper">
+                  <article class="photo-galery__caption">
+                    <h3 class="user-photo__title">Дорога на север</h3>
+                    <p class="user-photo__content">Автор фото: <span class="user-photo__name">Петр</span></p><span class="user-like"><span class="counter-like">15   </span></span>
+                  </article>
+                </div>
+              </div>
+              <div class="photo-galery_list picture-galery__photo"><img class="photo-galery__item photo-galery--mobile" src="img/photo-bridge-mobile@1x.jpg" alt="Мост дьявола" srcset="img/photo-bridge-mobile@2x.jpg 2x"/><img class="photo-galery__item photo-galery--tablet" src="img/photo-bridge-tablet@1x.jpg" alt="Мост дьявола" srcset="img/photo-bridge-tablet@2x.jpg 2x"/><img class="photo-galery__item photo-galery--desktop" src="img/photo-bridge-desktop@1x.jpg" alt="Мост дьявола" srcset="img/photo-bridge-desktop@2x.jpg 2x"/>
+                <div class="photo-galery__caption--wrapper">
+                  <article class="photo-galery__caption">
+                    <h3 class="user-photo__title">Мост дьявола</h3>
+                    <p class="user-photo__content">Автор фото: <span class="user-photo__name">Антон</span></p><span class="user-like"><span class="counter-like">15</span></span>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="ph_video">
+            <div class="ph_video__wrapper">
+              <div class="ph_video__title">
+                <h2 class="video__title">Все еще сомневаетесь?</h2>
+                <p class="video__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+              </div>
+              <div class="ph_video__sedona">
+                <iframe class="ph_iframe" src="https://www.youtube.com/embed/IeM8O5C1pBE" frameborder="0" width="648" height="500" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen"> </iframe>
+              </div>
+            </div>
+          </section>
+        </div>
+      </main>
+      <footer class="footer">
+        <h3 class="footer-title">#visitSEDONA</h3>
+        <div class="social-btn"><a class="social-btn__link" href="#"><img class="social-svg" src="img/icon-facebook.svg" alt="facebuk"/></a><a class="social-btn__link" href="#"><img class="social-svg" src="img/icon-twitter.svg" alt="facebuk"/></a><a class="social-btn__link" href="#"><img class="social-svg" src="img/icon-youtube.svg" alt="facebuk"/></a></div>
+        <div class="copyright">
+          <p class="copyright-text"> Разработано</p><a class="copyright-img" href="https://htmlacademy.ru/"><img src="img/logo-htmlacademy.svg" alt="HTML Academy"/></a>
+        </div>
+      </footer>
+    </div>
+  </body><script src="js/script.min.js"></script>
+  <script>
+    let previewPhoto = document.getElementById('ph_galery');
+    previewPhoto.classList.remove('visually-hidden');
+    
+    let previewIndex = document.getElementById('in_preview');
+    previewIndex.classList.add('visually-hidden');
+  </script>
+</html>
